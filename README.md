@@ -20,23 +20,10 @@
    npx expo start
    ```
 
-3. **Setting up Eslint:**
 
-   Use first this command:
-   ```bash
-   yarn add --dev eslint prettier @react-native-community/eslint-config
-   ```
 
-   Than on the root folder, we create a file ".eslintrc" with this code:
-   ```bash
-   {
-      "extends": "@react-native-community",
-      "rules": {
-         "quotes": [2, "double", { "avoidEscape": true}]
-      }     
-   }
+   
 
-   ```
 
    
 

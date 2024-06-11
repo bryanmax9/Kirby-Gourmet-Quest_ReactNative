@@ -30,8 +30,12 @@
    Than on the root folder, we create a file ".eslintrc" with this code:
    ```bash
    {
-    "extends": "@react-native-community"
+      "extends": "@react-native-community",
+      "rules": {
+         "quotes": [2, "double", { "avoidEscape": true}]
+      }     
    }
+
    ```
 
    

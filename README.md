@@ -20,8 +20,10 @@
    npx expo start
    ```
 
-
-
+3. **Add ReactNative Paper:**
+   ```bash
+   npm install react-native-paper
+   ```
    
 
 

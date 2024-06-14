@@ -24,6 +24,10 @@
    ```bash
    npm install react-native-paper
    ```
+3. **Add styled-components(this is to allow avoiding redundant styling):**
+   ```bash
+   npm install styled-components --legacy-peer-deps
+   ```
    
 
 

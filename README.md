@@ -28,7 +28,14 @@
    ```bash
    npm install styled-components --legacy-peer-deps
    ```
-   
+4. **Add Google Fonts:**
+   ```bash
+   expo install expo-font
+   ```
+   Than:
+   ```bash
+   expo install @expo-font
+   ```
 
 
    

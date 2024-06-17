@@ -34,7 +34,7 @@
    ```
    Than:
    ```bash
-   expo install @expo-font
+   expo install @expo-google-fonts/oswald
    ```
 
 

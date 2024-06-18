@@ -30,15 +30,15 @@
    ```
 4. **Add Google Fonts:**
    ```bash
-   expo install expo-font
+   expo install expo-font --legacy-peer-deps
    ```
    Than:
    ```bash
-   expo install @expo-google-fonts/oswald
+   expo install @expo-google-fonts/oswald --legacy-peer-deps
    ```
 5. **Install SVG Module:**
    ```bash
-   expo install react-native-svg
+   expo install react-native-svg --legacy-peer-deps
    ```
    
 

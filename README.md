@@ -36,8 +36,10 @@
    ```bash
    expo install @expo-google-fonts/oswald
    ```
-
-
+5. **Install SVG Module:**
+   ```bash
+   expo install react-native-svg
+   ```
    
 
 

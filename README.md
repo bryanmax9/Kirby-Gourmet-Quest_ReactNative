@@ -40,6 +40,11 @@
    ```bash
    npm install react-native-svg --legacy-peer-deps
    ```
+
+6. **Install React Native Navigation:**
+   ```bash
+   npm install @react-navigation/native-stack --legacy-peer-deps
+   ```
    
 
 

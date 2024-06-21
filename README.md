@@ -24,11 +24,23 @@
    ```bash
    npm install react-native-paper
    ```
-3. **Add styled-components(this is to allow avoiding redundant styling):**
+   
+4. **Install Node.js version 18:**
+   ```bash
+   nvm install 18
+   nvm use 18
+   ```
+
+   and install yarn
+   ```bash
+   yarn install
+   ```
+   
+6. **Add styled-components(this is to allow avoiding redundant styling):**
    ```bash
    npm install styled-components --legacy-peer-deps
    ```
-4. **Add Google Fonts:**
+7. **Add Google Fonts:**
    ```bash
    npm install expo-font --legacy-peer-deps
    ```
@@ -36,12 +48,12 @@
    ```bash
    npm install @expo-google-fonts/oswald --legacy-peer-deps
    ```
-5. **Install SVG Module:**
+8. **Install SVG Module:**
    ```bash
    npm install react-native-svg --legacy-peer-deps
    ```
 
-6. **Install React Native Navigation:**
+9. **Install React Native Navigation:**
    ```bash
    yarn install
    yarn add @react-navigation/native @react-navigation/bottom-tabs

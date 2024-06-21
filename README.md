@@ -43,9 +43,8 @@
 
 6. **Install React Native Navigation:**
    ```bash
-   npm install @react-navigation/native
-   npm install @react-navigation/bottom-tabs
-   npm install react-native-screens react-native-safe-area-context
+   yarn add @react-navigation/native @react-navigation/bottom-tabs
+   yarn add react-native-screens react-native-safe-area-context
    ```
    
 

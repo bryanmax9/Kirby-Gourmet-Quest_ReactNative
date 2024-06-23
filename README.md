@@ -1,7 +1,7 @@
 # Kirby-Gourmet-Quest_ReactNative
 
 
-## Setup for creating a projec on React Native
+## Setup for creating a project on React Native
 - React Documentation: https://docs.expo.dev/tutorial/create-your-first-app/
 
 1. **Install Expo CLI Globally:**
@@ -58,6 +58,10 @@
    yarn install
    yarn add @react-navigation/native @react-navigation/bottom-tabs
    yarn add react-native-screens react-native-safe-area-context
+   ```
+10. **Install Camelize to transform the data of API into Camel format:**
+   ```bash
+   yarn add camelize
    ```
    
 

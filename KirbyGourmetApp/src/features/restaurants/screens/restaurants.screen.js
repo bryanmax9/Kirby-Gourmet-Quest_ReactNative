@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyleSheet, FlatList, View } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import styled from "styled-components/native";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { AppArea } from "../../../components/utility/safe-area.component";
+import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
+
 const WholeScreen = styled(View)`
   flex: 1;
   background-color: khaki;
@@ -21,6 +23,8 @@ const RestaurantList = styled(FlatList).attrs({
 })``;
 
 export const RestaurantsScreen = () => {
+  const { isLoading, error, restaurants } = useContext(RestaurantsContext);
+
   const [searchQuery, setSearchQuery] = React.useState("");
 
   const onChangeSearch = (query) => setSearchQuery(query);
@@ -36,12 +40,15 @@ export const RestaurantsScreen = () => {
           />
         </SearchContainer>
         <RestaurantList
-          data={[{ name: 1 }, { name: 2 }, { name: 3 }, { name: 4 }]}
-          renderItem={() => (
-            <Spacer position="bottom" size="large">
-              <RestaurantInfoCard />
-            </Spacer>
-          )}
+          data={restaurants}
+          renderItem={({ item }) => {
+            // console.log(item);
+            return (
+              <Spacer position="bottom" size="large">
+                <RestaurantInfoCard restaurant={item} />
+              </Spacer>
+            );
+          }}
           keyExtractor={(item) => item.name}
         />
       </AppArea>

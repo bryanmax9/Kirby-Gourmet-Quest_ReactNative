@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "expo": "^51.0.12",
+    "expo": "~51.0.17",
     "react-native-paper": "^5.12.3"
   }
 }

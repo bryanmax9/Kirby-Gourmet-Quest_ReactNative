@@ -58,6 +58,9 @@
    yarn install
    yarn add @react-navigation/native @react-navigation/bottom-tabs
    yarn add react-native-screens react-native-safe-area-context
+   yarn add @react-navigation/stack
+   yarn add react-native-gesture-handler
+
    ```
 10. **Install Camelize to transform the data of API into Camel format:**
    ```bash

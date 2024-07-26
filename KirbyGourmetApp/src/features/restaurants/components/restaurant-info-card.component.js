@@ -1,3 +1,4 @@
+// restaurant-info-card.component.js
 import React from "react";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
@@ -28,10 +29,10 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
+    placeId,
   } = restaurant;
 
   const ratingArray = Array.from(new Array(Math.floor(rating)));
-  console.log(ratingArray);
 
   return (
     <RestaurantCard elevation={5}>
@@ -41,7 +42,12 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
         <Section>
           <Rating>
             {ratingArray.map((_, index) => (
-              <SvgXml key={`star-${index}`} xml={star} width={20} height={20} />
+              <SvgXml
+                key={`star-${placeId}-${index}`}
+                xml={star}
+                width={20}
+                height={20}
+              />
             ))}
           </Rating>
           <SectionEnd>
